@@ -45,7 +45,6 @@ CREATE TABLE tb_vencedor (
     nome_vencedor                     VARCHAR2(30 CHAR),
     cpf_cnpj_vencedor                 VARCHAR2(13 CHAR),
     valor_lance_vencedor_reais        INTEGER, 
---  ERROR: Column name length exceeds maximum allowed length(30) 
     tb_processo_minerario_id_processo INTEGER NOT NULL
 );
 
@@ -57,14 +56,13 @@ ALTER TABLE tb_processo_minerario
         REFERENCES tb_rodada ( id_rodada,
                                numero_rodada );
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE tb_processo_minerario
     ADD CONSTRAINT tb_processo_minerario_tb_localidade_fk FOREIGN KEY ( tb_localidade_id_localidade )
         REFERENCES tb_localidade ( id_localidade );
 
 
 
--- Relatório do Resumo do Oracle SQL Developer Data Modeler: 
+-- RelatÃ³rio do Resumo do Oracle SQL Developer Data Modeler: 
 -- 
 -- CREATE TABLE                             4
 -- CREATE INDEX                             0
