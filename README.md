@@ -27,27 +27,26 @@
 
 📜 Descrição
 
-  Para o seguinte projeto, foi feita a busca de dados do IBGE e normalização, assim como disponibilização destes dados para consultas e análises 
+Para o seguinte projeto, foi feita a geração de dados artificiais simulando condições ambientais reais, como temperatura, pressão atmosférica, altitude e umidade do solo, além da introdução de ruído para simular variações naturais. Esses dados foram utilizados para treinar um modelo de machine learning para prever a necessidade de irrigação.
 
-- <a href="https://www.ers.usda.gov/amber-waves/2022/september/brazil-s-momentum-as-a-global-agricultural-supplier-faces-headwinds/">Artigo de inspiração</a>
-
+<a href="https://www.ers.usda.gov/amber-waves/2022/september/brazil-s-momentum-as-a-global-agricultural-supplier-faces-headwinds/">Artigo de inspiração</a>
 Como o Sistema Funciona
 
-Modelagem e Normalização de dados:
+Geração e Normalização de Dados:
 
-- Utilizando o Oracle Data Modeler foi criado um Diagrama de Entidade e Relacionamento, assim como o modelo lógico físico. 
+Foi criado um dataset com variáveis ambientais (temperature, pressure, altitude e soilmoisture), categorizado em classes (Very Dry, Dry, Wet, Very Wet) com base em regras lógicas.
+Ruído foi adicionado a 30% dos dados para simular variabilidade natural.
+Modelagem e Treinamento:
 
-Criação de bases:
-
-- Baseando-se nisso, foram emitidas as linhas para criação das bases projetadas em .dll
-  
+Um modelo Random Forest foi treinado utilizando o dataset gerado artificialmente.
+O dataset foi dividido em treino e teste para validação do modelo, garantindo boa generalização.
 Consulta de dados e perguntas relevantes:
 
-- Para agregar ao estudo, foram criadas consultas capazes de responder perguntas relacionadas aos dados coletados, como: "Quem foram os vencedores dos últimos leilões?" e "Quais leilões de terra já tiveram seus vencedores anunciados?"
-  
-Documentação em Dicionário de dados:
+O modelo foi capaz de responder perguntas como: "Qual é a condição atual do solo?" e "Existe necessidade de irrigação para os dados fornecidos?".
+Além disso, foram realizadas previsões sobre novos dados para demonstrar o funcionamento do modelo.
+Documentação dos Resultados:
 
-- Para finalizar, foi criado um dicionário de dados para acompanhar a interpretabilidade dos modelos de relacionamento.
+Para finalizar, foi documentado o desempenho do modelo, que atingiu uma acurácia de 85%, indicando que ele pode ser útil em sistemas de irrigação automatizados baseados em dados simulados.
 
 
 ## 📁 Estrutura de pastas
@@ -59,6 +58,8 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 - <b>Bases</b>:Aqui estará o código em .dll para criação das bases e o arquivo csv que originou o projeto.
 
 - <b>Dicionário</b>: Nesta página haverá o dicionário de dados documentando o que for necessário.
+
+- <b>Processo</b>: Nesta página haverá o o arquivo de python que executa o modelo.
 
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
