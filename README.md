@@ -3,7 +3,7 @@
 <p align="center">
 <a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
 </p>
-
+LINK PARA VÍDEO DO YOUTUBE: <a href= "https://www.fiap.com.br/">https://youtu.be/3euJw6qN5HI</a>
 <br>
 
 # Cap1 Fase4
