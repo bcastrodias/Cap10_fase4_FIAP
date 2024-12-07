@@ -57,7 +57,7 @@ if st.button("Classificar"):
     st.write(f"A classe prevista é: **{prediction}**")
     
     # Lógica de rega
-    if prediction == "Dry":  # Sendo Dry a classe prevista
+    if prediction == "Dry" or prediction == "Very Dry":  # Sendo Dry a classe prevista
         st.warning("⚠️ O solo deve ser regado!")
     else:
         st.success("✅ O solo está em condições adequadas. Não é necessário regar.")
