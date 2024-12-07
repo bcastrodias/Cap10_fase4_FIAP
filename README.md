@@ -6,7 +6,7 @@
 
 <br>
 
-# Cap10 Fase3
+# Cap1 Fase4
 
 ## BMH
 
@@ -27,10 +27,8 @@
 
 📜 Descrição
 
-Para o seguinte projeto, foi feita a geração de dados artificiais simulando condições ambientais reais, como temperatura, pressão atmosférica, altitude e umidade do solo, além da introdução de ruído para simular variações naturais. Esses dados foram utilizados para treinar um modelo de machine learning para prever a necessidade de irrigação.
+Para o seguinte projeto, foi criado um dispositivo com LCD para manter registros em tempo real de umidade do solo, juntamente com a ausência ou presença de Potássio e Fósforo. Além disso, foi utilizado um modelo em Scikit para avaliar a situação do solo e indicar irrigação em determinadas condições.
 
-<a href="https://www.ers.usda.gov/amber-waves/2022/september/brazil-s-momentum-as-a-global-agricultural-supplier-faces-headwinds/">Artigo de inspiração</a>
-Como o Sistema Funciona
 
 Geração e Normalização de Dados:
 
@@ -61,6 +59,11 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>Processo</b>: Nesta página haverá o o arquivo de python que executa o modelo.
 
+- <b>ESP32</b>: Nesta página haverão os arquivos correspondentes ao sensor Wokwi ESP32.
+   - <b>diagram</b>: JSON com configurações de widgets necessários para plotagem de gráfico.
+   - <b>ESP32 diagram</b>: Imagem de diagrama ESP32 montado no simulador Wokwi.
+   - <b>libraries</b>: txt indicando libs utilizadas.
+   - <b>sketch</b>: Código C#/C++ do ESP32.
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
 ## 🔧 Como executar o código
@@ -68,7 +71,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🗃 Histórico de lançamentos
 
-*1.0 - 13/11/2024
+*1.0 - 06/12/2024
 
 ## 📋 Licença
 
